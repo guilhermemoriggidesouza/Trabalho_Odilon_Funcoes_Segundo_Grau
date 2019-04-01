@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="hamburgers-master/dist/hamburgers.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <title>Hello, Odilon</title>
+</head>
+
+<body>
+    <div id="menu-topo" class="box-shadow bg-white fixed-top">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg bg-white p-0">
+                        <div class="w-100">
+                            <div class="w-25 text-center d-inline-block ">
+                                <a href="#" class="navbar-brand"><img src="img/logo.png" class="w-50"></a>
+                            </div>
+                            <div class="w-25 float-right d-block d-md-none mt-3">
+                                <button id="buttonNavbar" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                    <div class="hamburguer-animation"><span></span><span></span><span></span><span></span></div>
+                                </button>
+                            </div>
+                            <div class="tamanho d-inline-block ">
+                                <div class="collapse h-100 navbar-collapse" id="navbarNav">
+                                    <div class="w-50 centralizar">
+                                        <strong class="texto-titulo">Calculadora de função 2.0</strong>
+                                    </div>
+                                    <ul class="d-inline h-100 m-0">
+                                        <li class="d-inline h-100 pb-4 centralizar texto-itens mx-3">
+                                            <a href="javascript:mostrarSession('#page1', '#page2', '#page3');" class="a-none-item"><strong>Demanda</strong></a>
+                                        </li>
+                                        <li class="d-inline h-100 pb-4 centralizar texto-itens mx-3">
+                                            <a href="javascript:mostrarSession('#page2', '#page1', '#page3');" class="a-none-item"><strong>Receita</strong></a>
+                                        </li>
+                                        <li class="d-inline h-100 pb-4 centralizar texto-itens mx-3">
+                                            <a href="javascript:mostrarSession('#page3', '#page1', '#page2');" class="a-none-item"><strong>Lucro</strong></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="page1" class="page-start img-paralax">
+        <div class="bg-white">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-10 text-center">
+                        <p>
+                            <h2 class="txt-laranja">
+                                Calcular Demanda
+                            </h2>
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-center my-5" id="pagina_inicial">
+                    <form id="calcula_demanda">
+                        <div class="col-12 text-center">
+                            <div class="row justify-content-center my-5" id="pagina_inicial">
+                                <div class="col-6 text-center mb-5">
+                                    <div class="row justify-content-center">
+                                        <div class="col-12 col-md-4 text-center">
+                                            Preço Inicial
+                                        </div>
+                                        <div class="col-12 col-md-8">
+                                            <input type="text" class="form-control" id="input_1" aria-describedby="quantidade_inicial" placeholder="Insira o valor inicial" required> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 text-center mb-5">
+                                    <div class="row justify-content-center">
+                                        <div class="col-12 col-md-4 text-center">
+                                            Total de carros que vão
+                                        </div>
+                                        <div class="col-12 col-md-8">
+                                            <input type="text" class="form-control" id="input_1_1" aria-describedby="preço_inicial" placeholder="Insira o tanto de carros que vão" required> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 text-center mb-5 ">
+                                    <div class="row justify-content-center">
+                                        <div class="col-12 col-md-4 text-center">
+                                            Preço final
+                                        </div>
+                                        <div class="col-12 col-md-8">
+                                                <input type="text" class="form-control" id="input_2" aria-describedby="quantidade_final" placeholder="Insira o valor final" required> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 text-center mb-5">
+                                    <div class="row justify-content-center">
+                                        <div class="col-12 col-md-4 text-center">
+                                            total de carros que vão
+                                        </div>
+                                        <div class="col-12 col-md-8">
+                                            <input type="text" class="form-control" id="input_1_2" aria-describedby="preço_inicial" placeholder="Insira o tanto de carros que vão" required> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 text-center colocar-baixo">
+                                    <div id="botao_chamar_abrahao">
+                                        <button id="button_abraao" type="button" class="a-none px-5 btn btn-outline button-config"><strong>Calcular</strong></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="page2" class="page-start demanda-img d-none">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 text-center">
+                    <div class="centralizar pb-5">
+                        <div class="bg-white my-5">
+                            <div class="container">
+                                <div class="row justify-content-center py-5">
+                                    <div class="col-12 col-md-6">
+                                        <div class="w-100 card">
+                                            <div class="row">
+                                                <div class="col-8 text-left">
+                                                    <p class="pl-5 mb-0 text-card">Demanda</p>
+                                                </div>
+                                                <div class="col-4 text-right">
+                                                    <img src="img/i-seta.svg" onclick="mostrar('#abrir-1', this);" id="img-seta-1" class="img-seta">
+                                                </div>
+                                                <hr>
+                                                <div id="abrir-1" class="col-12 d-none">
+                                                    <p id="form_demanda"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="row justify-content-center mb-4">
+                                    <div class="col-12 col-md-6">
+                                        <div class="w-100 card">
+                                            <div class="row">
+                                                <div class="col-8 text-left">
+                                                    <p class="pl-5 mb-0 text-card">Receita</p>
+                                                </div>
+                                                <div class="col-4 text-right">
+                                                    <img src="img/i-seta.svg" onclick="mostrar('#abrir-2', this);" id="img-seta-2" class="img-seta">
+                                                </div>
+                                                <hr>
+                                                <div id="abrir-2" class="col-12 d-none">
+                                                    <p id="form_receita"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <form>
+                                <div class="row justify-content-center my-5">
+                                    <div class="col-10 col-md-4 text-center">
+                                        <div class="row justify-content-center mb-5">
+                                            <div class="col-6 col-md-8 text-center">
+                                                <input type="text" class="form-control w-100" id="preco_venda" placeholder="preço de venda">
+                                            </div>
+                                            <div class="col-6 col-md-4 text-center">
+                                                <button type="button" id="button_henrique" class="a-none px-3 btn btn-outline button-config"><strong>Calcular</strong></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="bg-white">
+                            <div class="row justify-content-center">
+                                <div class="col-10 col-md-6 text-center my-5">
+                                    <a href="javascript:mostrarSession('#page3', '#page1', '#page2');" class="a-none py-4 w-100 btn btn-outline button-config"><h3>Calcular Lucro</h3></a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="page3" class="page-start d-none">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center mb-3">
+                    <h2 class="txt-azul">Calcular Lucro</h2>
+                </div>
+                <div class="col-12 text-center my-5">
+                    <h5>Custos</h5>
+                </div>
+                <div class="col-4 text-center mb-3">
+                    <input type="text" class="form-control" id="custos-fixos" placeholder="Fixos" aria-describedby="custos-fixos">                         
+                </div>
+                <div class="col-4 text-center mb-3">
+                    <input type="text" class="form-control" id="custos-variaveis" placeholder="Variáveis" aria-describedby="custos-variaveis">                         
+                </div>
+                <div class="col-12 text-center">
+                    <button id="button_moriggi" type="button" class="a-none px-5 btn btn-outline button-config"><strong>Calcular</strong></a>
+                </div>
+                <div class="col-12 text-center">
+                    <p class="text-card">E Gerar gráfico </p>
+                </div>
+            </div>
+            <div class="row jutsify-content-center">
+                <div id="mostrar-raizes" class="col-12 amostra text-center">
+                    <p id="raizes"></p>
+                </div>
+            </div>
+            <div id="grafico" class="amostrar">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center mb-5">
+                        <p>Passe o mouse para ver todas as informações</p>
+                        <div id="curve_chart" class="text-center"></div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </section>
+
+    <footer class="bg-dark">
+        <div class="container ">
+            <div class="row py-5 justify-content-center">
+                <div class="col-md-3 col-10">
+                    <img src="img/logo.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-3 col-12">
+                    <div class="centralizar-xy">
+                        <div class="row">
+                            <div class="col-7 texto-itens">
+                                <a href="http://odilao.ga/CalculadoraIntersec/" class="a-none-item">
+                                    <strong>Calculadora de Intersec</strong>
+                                </a>
+                            </div>
+                            <div class="col-7 texto-itens">
+                                <a href="http://odilao.ga/CalculaFuncoes/" class="a-none-item">
+                                    <strong>Calculadora de Funções primeiro grau</strong>
+                                </a>
+                            </div>
+                            <div class="col-7 texto-itens">
+                                <a href="http://odilao.ga/CalculaFuncoesDois/" class="a-none-item">
+                                    <strong>Calculadora de Funcoes segundo grau</strong>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="centralizar-xy">
+                        <div class="row">
+                            <div class="col-12 col-md-4 texto-itens">
+                                <a href="javascript:mostrarSession('#page1', '#page2', '#page3');" class="a-none-item">
+                                    <strong>Demanda</strong>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-4 texto-itens">
+                                <a href="javascript:mostrarSession('#page2', '#page1', '#page3');" class="a-none-item">
+                                    <strong>Receita</strong></a>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-4 texto-itens">
+                                <a href="javascript:mostrarSession('#page3', '#page1', '#page2');" class="a-none-item">
+                                    <strong>Lucro</strong>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/funcoes.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+        var indentify = 0;
+        function mostrar(id, isso){
+            if(indentify == 0){
+                $(id).removeClass("d-none");
+                indentify++;
+            }else{
+                $(id).addClass('d-none');
+                indentify--;
+            }
+        }
+        function mostrarSession(mostrar, esconder1, esconder2){
+            $(mostrar).removeClass('d-none');
+            $(esconder1).addClass('d-none');
+            $(esconder2).addClass('d-none');
+
+        }
+        function posicionaPageStart() {
+            var menuHeight = $('#menu-topo').innerHeight();
+            
+            // alert(menuHeight);
+            
+            $('.page-start').css('margin-top',menuHeight);
+        }
+        $(document).ready(function(){
+            posicionaPageStart();
+        })
+    </script>
+</body>
+
+</html>

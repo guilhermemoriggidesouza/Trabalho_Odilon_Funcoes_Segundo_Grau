@@ -1,0 +1,245 @@
+/* ANIMAÇÃO DO MENU */
+.hamburguer-animation {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    margin: 0px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+  }
+
+  .hamburguer-animation span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+    background-color: #98bf13;
+  }
+  .hamburguer-animation span:nth-child(1) {
+    top: 0px;
+  }
+
+  .hamburguer-animation span:nth-child(2), .hamburguer-animation span:nth-child(3) {
+    top: 10px;
+  }
+
+  .hamburguer-animation span:nth-child(4) {
+    top: 20px;
+  }
+
+  .hamburguer-animation.open span:nth-child(1) {
+    top: 11px;
+    width: 0%;
+    left: 50%;
+  }
+
+  .hamburguer-animation.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .hamburguer-animation.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  .hamburguer-animation.open span:nth-child(4) {
+    top: 11px;
+    width: 0%;
+    left: 50%;
+  }
+/* FIM ANIMAÇÃO DO MENU */
+/* TOPO */
+    .centralizar{
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .w-15{
+      width: 25%;
+    }
+    .texto-titulo{
+      font-size: 20px;
+      color:#66b9bf;
+    }
+    .texto-itens{
+      color: #66b9bf;
+      border-bottom: solid 4px rgba(0,0,0,0.0);
+    }
+    .texto-itens:hover{
+      color: #e37222;
+      border-bottom: solid 4px #e37222;
+    }
+    .tamanho{
+      height:50px;
+    }
+    .deslocar{
+      position: relative;
+      top: -50%;
+      transform: translateY(35%);
+    }
+    .centralizar-xy{
+      position: relative;
+      top: 50%;
+      left: 20%;
+      transform: translateY(-50%);
+    }
+    .bg-foto-index{
+      background-image: url(../img/img-index-foto.jpg);
+      background-position: center;
+      background-attachment: fixed;
+      background-size: cover;
+      height:130vh;
+    }
+    a.a-none:link {
+      text-decoration:none;
+      color: #e37222;
+    }
+    a.a-none:visited {
+      text-decoration:none;
+      color: #e37222;
+    }
+    a.a-none:hover {
+      text-decoration:none;
+      color: #fff;
+    }
+    a.a-none:active {
+      text-decoration:none;
+      color: #e37222;
+    }
+    a.a-none-item:link {
+      text-decoration:none;
+      color: #e37222;
+    }
+    a.a-none-item:visited {
+      text-decoration:none;
+      color: #e37222;
+    }
+    a.a-none-item:hover {
+      text-decoration:none;
+      color: #66b9bf;
+    }
+    a.a-none-item:active {
+      text-decoration:none;
+      color: #e37222;
+    }
+    .button-config{
+      color: #e37222;
+      border-color:#e37222;
+      border-radius: 25px;
+      background-color: #fff;
+    }
+    .button-config:hover{
+      color: #fff;
+      border-color:#e37222;
+      border-radius: 25px;
+      background-color: #e37222;
+    }
+    .img-paralax{
+      margin-top: 82.625px;
+      height: 100vh;
+      background-image: url(../img/demanda.jpg);
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    #botao_chamar_abrahao{
+      position:relative;
+      top: 400%;
+    }
+    .box-shadow{
+      -webkit-box-shadow: -1px 5px 19px -6px rgba(0,0,0,0.75);
+      -moz-box-shadow: -1px 5px 19px -6px rgba(0,0,0,0.75);
+      box-shadow: -1px 5px 19px -6px rgba(0,0,0,0.75);
+    }
+    .text-card{
+      font-size: 20px;
+      color: #66b9bf;
+    }
+    .img-seta{
+      height: 30px;
+    }
+    .img-seta:hover{
+      cursor: pointer;
+    }
+    .demanda-img{
+      margin-top: 82.625px;
+      background-image: url(../img/money.jpg);
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    .bg-white-borded{
+      background-color: #fff;
+      border-radius: 50px;
+    }
+    .bg-white{
+      background-color: #fff;
+      border-radius: 5px;
+    }
+    hr{
+      transform: translateX(-50%);
+      position: relative;
+      left: 50%;
+    }
+    .amostra{
+      opacity:0;
+      transition: all 1s;
+      transform: translateY(-50px);
+    }
+    .mostrar-raiz{
+      opacity:1;
+      transition: all 1s;
+      transform: translateY(0px);
+    }
+    .txt-laranja{
+      color: #e37222;
+    }
+    .txt-azul{
+      color: #66b9bf;
+    }
+    @media (max-width: 750px) {
+      .centralizar-xy{
+        position: relative;
+        top: 0%;
+        left: 0%;
+        transform: translateY(0%);
+      }
+      .texto-itens:hover{
+        color: #e37222;
+        border-bottom:inherit;
+      }
+      .texto-itens{
+        display: block;
+        color: #66b9bf;
+      }
+      #botao_chamar_abrahao{
+        position: relative;
+        left: 50%;
+        top: 400%;
+        transform: translateX(-80%);
+      }
+    }
+/* FIM TOPO */

@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="PT-BR">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="hamburgers-master/dist/hamburgers.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Hello, Odilon</title>
+</head>
+<body>
+    <div id="menu-topo" class="box-shadow bg-white fixed-top">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg bg-white p-0">
+                        <div class="w-100">
+                            <div class="w-25 text-center d-inline-block ">
+                                <a href="#" class="navbar-brand"><img src="img/logo.png" class="w-50"></a>
+                            </div>
+                            <div class="w-25 float-right d-block d-md-none mt-3">
+                                <button id="buttonNavbar" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                    <div class="hamburguer-animation"><span></span><span></span><span></span><span></span></div>
+                                </button>
+                            </div>
+                            <div class="tamanho d-inline-block ">
+                                <div class="collapse h-100 navbar-collapse" id="navbarNav">
+                                    <div class="centralizar">
+                                        <strong class="texto-titulo">Calculadora de função 2.0</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="page-start bg-foto-index" >
+        <div class="container centralizar" id="pagina_inicial">
+            <div class="row justify-content-center mt-5">
+                <div class="col-8 bg-white text-center mt-2">
+                    <p>
+                        <h2>
+                            Grupo do Trabalho do Odilon
+                        </h2>
+                    </p>
+                </div>
+            </div>
+            <hr class="col-8 text-center p-0 m-0">
+            <div class="row justify-content-center  mb-5" id="pagina_inicial">
+                <div class="col-8  bg-white text-center">
+                    <h2>
+                        Integrantes:
+                    </h2>
+                    <p>
+                        Guilherme Moriggi de Souza
+                    </p>
+                    <p>
+                        Lucas Abrahão
+                    </p>
+                    <p>
+                        Henrique Barros de Almeida
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-center pt-5 mb-5">
+                <div class="col-4  bg-white-borded text-center py-3">
+                    <a href="calculo.html" class="a-none px-md-5 btn btn-outline-primary button-config"><strong>Calcular</strong></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer class="bg-dark">
+        <div class="container ">
+            <div class="row py-5 justify-content-center">
+                <div class="col-md-3 col-10">
+                    <img src="img/logo.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-3 col-12">
+                    <div class="centralizar-xy">
+                        <div class="row">
+                            <div class="col-7 texto-itens">
+                                <a href="http://odilao.ga/CalculadoraIntersec/" class="a-none-item">
+                                    <strong>Calculadora de Intersec</strong>
+                                </a>
+                            </div>
+                            <div class="col-7 texto-itens">
+                                <a href="http://odilao.ga/CalculaFuncoes/" class="a-none-item">
+                                    <strong>Calculadora de Funções primeiro grau</strong>
+                                </a>
+                            </div>
+                            <div class="col-7 texto-itens">
+                                <a href="http://odilao.ga/CalculaFuncoesDois/" class="a-none-item">
+                                    <strong>Calculadora de Funcoes segundo grau</strong>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        function posicionaPageStart() {
+            var menuHeight = $('#menu-topo').innerHeight();
+            
+            // alert(menuHeight);
+            
+            $('.page-start').css('margin-top',menuHeight);
+        }
+        $(document).ready(function(){
+            posicionaPageStart();
+        })
+    </script>
+</body>
+</html>
